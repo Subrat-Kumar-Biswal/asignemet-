@@ -40,7 +40,7 @@ app.post("/register", async (req, res) => {
       .create({
         name,
         email,
-        password: hashPassword,
+        password ,
         conformPassword,
       })
       .then((data) => res.json(data))

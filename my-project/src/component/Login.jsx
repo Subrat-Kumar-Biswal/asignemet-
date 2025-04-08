@@ -43,7 +43,7 @@ const Login = () => {
         }
       })
       .catch((error) => {
-        // setSuccessMessage("wrong credentials");
+        setSuccessMessage("wrong credentials");
         setApiError(
           error.response?.data?.message || "Login failed. Please try again."
         );

@@ -29,15 +29,15 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Hamburger Menu */}
-      <div className="fixed top-5 left-2 z-10 md:hidden">
-      <button
+      <div className="fixed top-5 left-2 z-50 md:hidden">
+        <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          className="p-2 rounded-md h-25 w-25 text-white bg-gray-500 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="p-2 rounded-md h-10 w-10 text-white shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           {isSidebarOpen ? (
-            <XMarkIcon className="h-4 w-5 " /> // Close icon
+            <img src='https://img.icons8.com/?size=100&id=23543&format=png&color=000000' className="h-6 w-6 font-bold" /> // Close icon
           ) : (
-            <Bars3Icon className="h-4 w-5" /> // Hamburger icon
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png' className="h- w-6" /> // Hamburger icon
           )}
         </button>
       </div>
